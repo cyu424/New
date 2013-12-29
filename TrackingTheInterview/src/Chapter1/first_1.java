@@ -26,7 +26,8 @@ public class first_1 {
 		String a="cqac";
 		for(int i=0;i<3;i++)
 		{
-			if(a.charAt(i)==97)
+			if(a.charAt(i)==97)         //'a'=97, so if match, function exit
+                                                                // and return i =2
 				return i;
 			
 		}
@@ -46,9 +47,9 @@ public class first_1 {
 		
 		for(int i = 0; i < 100; i++) {
 		      if(i == 82) 
-		    	  break; // Out of for loop
+		    	  break; // Out of for loop          exit the loop!!!!!!!!!!
 		      if(i % 9 != 0)
-		    	  continue; // Next iteration
+		    	  continue; // Next iteration, so only those i%9==0 will be printed
 		      System.out.print(i + " ");
 		    }
 		    //System.out.println();
