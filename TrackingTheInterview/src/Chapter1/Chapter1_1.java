@@ -2,6 +2,9 @@ package Chapter1;
 
 public class Chapter1_1 {
 
+
+//     idea:
+	
 	/**
 	 * @param args
 	 */
@@ -24,7 +27,7 @@ public class Chapter1_1 {
 			if(!hit[c])
 				hit[c]=true;
 			else
-				return true;  //dup 只要有一个，直接退出循环return!!!!!!!!!!!
+				return true;  //dup 只要锟斤拷一锟斤拷锟斤拷直锟斤拷锟剿筹拷循锟斤拷return!!!!!!!!!!!
 			
 		}
 			
