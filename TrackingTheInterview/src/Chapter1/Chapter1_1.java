@@ -3,10 +3,19 @@ package Chapter1;
 public class Chapter1_1 {
 
 
-//     idea:
+//      
 	
 	/**
-	 * @param args
+           requirement:
+           Implement an algorithm to determine if a string has all 
+           unique characters  What if you can not use additional data structures?
+	   idea: 
+           1. create a boolean array to store every element's status, all false
+           (no duplicate) by default. 
+           2. iterate the whole string,  use char(ASC code) to index the boolean array
+               if false, set true;
+               if ture, return true(has duplicated)
+               end of iteration, return false(no duplicated)
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -27,7 +36,8 @@ public class Chapter1_1 {
 			if(!hit[c])
 				hit[c]=true;
 			else
-				return true;  //dup ֻҪ��һ����ֱ���˳�ѭ��return!!!!!!!!!!!
+				return true;  //once duplicated, exit function and 
+                                                    //return true(has duplicated)!!!!!!!!!!!
 			
 		}
 			
