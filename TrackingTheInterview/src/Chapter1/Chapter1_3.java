@@ -3,7 +3,23 @@ package Chapter1;
 public class Chapter1_3 {
 
 	/**
-	 * @param args
+	 *delete all duplicated elements
+          solution 1:
+          create a boolean array to store element's status(false: no exist; true: exist)
+          if true, indicates exists, do nothing
+          if false(initial status of boolean array), insert, index++,set true
+
+         solution 2:
+         Compare elements with all char before it.
+         set a variance pos to indicate the position to be insert
+         for (int i=0;i<pos:i++)
+            if(a[i]==a[j])
+                    break; //once one element is same, end current loop, examine next 
+            if(i==pos)        //compare all elements before it and no duplicate
+                    a[pos]=a[i];
+                    pos++;     //insert, add pos by one
+                    
+          
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
